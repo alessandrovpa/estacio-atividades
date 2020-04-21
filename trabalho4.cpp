@@ -8,10 +8,12 @@ int main(){
   setlocale(LC_ALL, "portugueses");
   float precos[6] = {5.2, 8.3, 15.5, 10.2, 11.3, 6};
   char descricoes[6][16] = {"Cachorro quente", "Bauru simples", "Bauru com ovo", "Hambúrguer", "Cheesburguer", "Refrigerante"};
-  int opcao, quantidade, codigo;
+  int opcao = 0, quantidade, codigo;
   
-  cout << "Digite o número do item: ";
-  cin >> opcao;
+  while(opcao < 100 || opcao > 105){
+    cout << "Digite o número do item: ";
+    cin >> opcao;
+  }
   cout << endl << "Digite a quantidade: ";
   cin >> quantidade;
 
